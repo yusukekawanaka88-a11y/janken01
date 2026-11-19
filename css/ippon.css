@@ -1,0 +1,143 @@
+/* 全体 */
+body {
+    margin: 0;
+    padding: 0;
+    background: #0b0b0b;
+    color: white;
+    font-family: "Arial", "Hiragino Kaku Gothic ProN", sans-serif;
+    text-align: center;
+}
+
+/* タイトル */
+header {
+    background: linear-gradient(135deg, #111, #333, #111);
+    border-bottom: 5px solid #d4af37;
+    padding: 30px 20px;
+    font-size: 30px;
+    color: #e60012;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffd700;
+    text-shadow: 3px 3px 0 #8b0000;
+    letter-spacing: 5px;
+}
+
+/* メイン */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* お題ボタン */
+#pull {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    color: #111;
+    border: 3px solid #fff1a8;
+    padding: 18px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 6px 0 #755400;
+    transition: 0.2s;
+}
+
+#pull:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+#pull:active {
+    transform: translateY(5px);
+    box-shadow: 0 1px 0 #755400;
+}
+
+/* 写真エリア */
+#echo {
+    margin: 35px auto;
+    padding: 15px;
+    background: #161616;
+    border: 5px solid #d4af37;
+    border-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#echo img {
+    width: 100%;
+    max-width: 650px;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* 回答入力欄 */
+#answer {
+    width: 90%;
+    height: 100px;
+    padding: 15px;
+    font-size: 22px;
+    border: 3px solid #d4af37;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    resize: vertical;
+}
+
+/* 回答ボタン */
+#submit {
+    display: block;
+    margin: 25px auto;
+    background: linear-gradient(135deg, #e60012, #8b0000);
+    color: white;
+    border: 3px solid #ffcc00;
+    border-radius: 8px;
+    padding: 18px 70px;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #500000;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* 回答表示 */
+#result {
+    font-size: 32px;
+    font-weight: 900;
+    color: #ffd700;
+    text-shadow: 2px 2px 0 #b00000;
+    margin: 30px 0;
+    overflow-wrap: anywhere;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    #pull,
+    #submit {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+
+    #answer {
+        font-size: 18px;
+    }
+}
